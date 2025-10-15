@@ -1,233 +1,587 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Equipo Bravo — Landing (v2.0)</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rajdhani:wght@300;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Airsoft México</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="topbar">
-        <div class="brand">
-            <div id="logo-mark" class="mark">
-                <img src="https://i.postimg.cc/GhKtjJ2y/LOGO-TRIANGULO-RONIN-NEGRO-1-1-1.png" alt="Logotipo ronin">
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo"></div>
             </div>
-            <div class="brand-text">Equipo Bravo</div>
-        </div>
-        <nav class="nav" id="main-nav">
-            <a href="#historia">Historia</a>
-            <a href="#valores">Valores</a>
-            <a href="#miembros">Miembros</a>
-            <a href="#eventos">Eventos</a>
-            <a href="#galeria">Galería</a>
-            <a href="#videos">Videos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-        <div class="actions">
-            <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">🌙</button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#historia" class="nav-link">Historia</a>
+                <a href="#valores" class="nav-link">Valores</a>
+                <a href="#miembros" class="nav-link">Miembros</a>
+                <a href="#eventos" class="nav-link">Eventos</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#videos" class="nav-link">Videos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
+    Sección Hero/Inicio
+    <section class="hero-section" id="inicio">
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Ronin<br><span class="highlight">Airsoft</span></h1>
+                <p class="hero-subtitle">Siempre Ronin</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/roninairsoftteamcancun" target="_blank" class="social-link"
+                        aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" class="social-link" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-    <!-- cinematic stinger container -->
-    <div id="stinger" class="stinger" aria-hidden="true">
-        <div class="stinger-layer" id="stinger-layer"></div>
-        <canvas id="stinger-canvas"></canvas>
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
     </div>
 
+    <!----Sección Historia  !--->
+    <section class="section" id="historia">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">NUESTRA HISTORIA</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p class="lead-text">Fundados en 2018, somos un equipo de élite dedicado al airsoft táctico en
+                        México.</p>
+                    <p>Comenzamos como un grupo de amigos apasionados por las simulaciones militares y el trabajo en
+                        equipo. A través de los años, hemos evolucionado hasta convertirnos en uno de los equipos más
+                        respetados en la escena nacional de airsoft.</p>
+                    <p>Nuestra experiencia abarca desde operaciones CQB urbanas hasta misiones de largo alcance en
+                        terrenos abiertos. Cada miembro aporta habilidades únicas que fortalecen nuestra capacidad
+                        operativa.</p>
+                </div>
+                <div class="content-image">
+                    <img src="https://i.postimg.cc/d3QZjW8R/1000159305.jpg0" alt="Historia del equipo">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <main id="main">
-        <section id="home" class="hero">
-            <div class="hero-overlay">
-                <div class="hero-content container">
-                    <h1 class="kicker">EQUIPO BRAVO</h1>
-                    <h2 class="title">Táctica. Disciplina. Hermandad.</h2>
-                    <p class="lead">Formación mil-sim especializada en operaciones de campo, entrenamiento y eventos
-                        competitivos. Respeto, seguridad y mejora constante.</p>
-                    <div class="hero-ctas">
-                        <a class="btn primary" id="join-btn">Unirse</a>
-                        <a class="btn" href="#eventos">Próximos eventos</a>
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
+    </div>
+
+    <!----Sección Valores  !--->
+    <section class="section section-dark" id="valores">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">NUESTROS VALORES</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>TRABAJO EN EQUIPO</h3>
+                    <p>La coordinación y comunicación son fundamentales para el éxito de cada misión.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>DISCIPLINA</h3>
+                    <p>Mantenemos altos estándares de entrenamiento y preparación constante.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>RESPETO</h3>
+                    <p>Valoramos a cada jugador y mantenemos el fair play en todo momento.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <h3>EXCELENCIA</h3>
+                    <p>Buscamos constantemente mejorar nuestras habilidades y tácticas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
+    </div>
+
+    <!----Sección Miembros  !--->
+    <section class="section" id="miembros">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">NUESTRO EQUIPO</h2>
+            </div>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Miembro 1">
+                    </div>
+                    <div class="member-info">
+                        <h3>COMANDANTE ALPHA</h3>
+                        <p class="member-role">Líder de Escuadrón</p>
+                        <p class="member-desc">Especialista en tácticas y coordinación de equipo.</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Miembro 2">
+                    </div>
+                    <div class="member-info">
+                        <h3>BRAVO SIX</h3>
+                        <p class="member-role">Francotirador</p>
+                        <p class="member-desc">Experto en reconocimiento y tiro de precisión.</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Miembro 3">
+                    </div>
+                    <div class="member-info">
+                        <h3>CHARLIE</h3>
+                        <p class="member-role">Operador CQB</p>
+                        <p class="member-desc">Especialista en combate cercano y asalto.</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Miembro 4">
+                    </div>
+                    <div class="member-info">
+                        <h3>DELTA FORCE</h3>
+                        <p class="member-role">Apoyo de Fuego</p>
+                        <p class="member-desc">Proporciona supresión y cobertura táctica.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="historia" class="panel">
-            <div class="container">
-                <h3 class="section-title">Historia</h3>
-                <div class="two-col card">
-                    <div>
-                        <h4>Orígenes</h4>
-                        <p>Iniciamos en 2015 como un grupo de amigos con formación en simulación táctica. Evolucionamos
-                            hasta convertirnos en un equipo reconocido en la escena nacional.</p>
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
+    </div>
+
+    <!----Sección Miembros  !--->
+    <section class="section section-dark" id="eventos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">PRÓXIMOS EVENTOS</h2>
+            </div>
+            <div class="events-list">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day">15</span>
+                        <span class="event-month">MAR</span>
                     </div>
-                    <div>
-                        <h4>Trayectoria</h4>
-                        <p>Participaciones en Milsims regionales, colaboración con organizaciones e impulso de prácticas
-                            seguras y responsables dentro del hobby.</p>
+                    <div class="event-info">
+                        <h3>OPERACIÓN TORMENTA DEL DESIERTO</h3>
+                        <p class="event-location">Campo Táctico Los Pinos, Estado de México</p>
+                        <p class="event-desc">Simulación de operaciones en terreno abierto con objetivos múltiples.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="valores" class="panel">
-            <div class="container">
-                <h3 class="section-title">Valores</h3>
-                <div class="values card">
-                    <div class="value">Disciplina</div>
-                    <div class="value">Seguridad</div>
-                    <div class="value">Camaradería</div>
-                    <div class="value">Respeto</div>
-                    <div class="value">Innovación</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="miembros" class="panel">
-            <div class="container">
-                <h3 class="section-title">Miembros</h3>
-                <div class="team-grid card">
-                    <article class="member">
-                        <img src="assets/members/operador1.jpg" alt="Capitán Hawk">
-                        <div class="meta">
-                            <h4>Capitán "Hawk"</h4><small>Comandante</small>
-                        </div>
-                    </article>
-                    <article class="member">
-                        <img src="assets/members/operador2.jpg" alt="Viper">
-                        <div class="meta">
-                            <h4>"Viper"</h4><small>Francotirador</small>
-                        </div>
-                    </article>
-                    <article class="member">
-                        <img src="assets/members/operador3.jpg" alt="Rook">
-                        <div class="meta">
-                            <h4>"Rook"</h4><small>Soporte</small>
-                        </div>
-                    </article>
-                    <article class="member">
-                        <img src="assets/members/operador4.jpg" alt="Blitz">
-                        <div class="meta">
-                            <h4>"Blitz"</h4><small>CQB</small>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="eventos" class="panel">
-            <div class="container">
-                <h3 class="section-title">Eventos</h3>
-                <div class="events card">
-                    <div class="event">
-                        <time>12 Oct 2025</time>
-                        <div class="ev-body">
-                            <h4>Milsim Perote</h4>
-                            <p>Escenario montañoso, día completo.</p>
-                        </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day">22</span>
+                        <span class="event-month">ABR</span>
                     </div>
-                    <div class="event">
-                        <time>23 Nov 2025</time>
-                        <div class="ev-body">
-                            <h4>Night Raid CDMX</h4>
-                            <p>Operación nocturna — cupo limitado.</p>
-                        </div>
+                    <div class="event-info">
+                        <h3>TORNEO CQB NACIONAL</h3>
+                        <p class="event-location">Arena Urbana, Ciudad de México</p>
+                        <p class="event-desc">Competencia de combate cercano en entorno urbano simulado.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day">10</span>
+                        <span class="event-month">MAY</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>MILSIM 48 HORAS</h3>
+                        <p class="event-location">Zona Boscosa, Morelos</p>
+                        <p class="event-desc">Simulación militar de dos días con campamento nocturno.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="galeria" class="panel">
-            <div class="container">
-                <h3 class="section-title">Galería</h3>
-                <div class="gallery-grid">
-                    <div class="carousel card" data-type="sniper">
-                        <h4>Francotirador</h4>
-                        <div class="viewport">
-                            <div class="track" aria-hidden="true"></div>
-                        </div>
-                        <div class="controls">
-                            <button class="icon-btn prev">◀</button>
-                            <div class="dots"></div>
-                            <button class="icon-btn next">▶</button>
-                        </div>
-                    </div>
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
+    </div>
 
-                    <div class="carousel card" data-type="cqb">
-                        <h4>Operador CQB</h4>
-                        <div class="viewport">
-                            <div class="track" aria-hidden="true"></div>
-                        </div>
-                        <div class="controls">
-                            <button class="icon-btn prev">◀</button>
-                            <div class="dots"></div>
-                            <button class="icon-btn next">▶</button>
-                        </div>
-                    </div>
-                </div>
+    <!----Sección Galeria  !--->
+    <section class="section" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">GALERÍA</h2>
             </div>
-        </section>
 
-        <section id="videos" class="panel">
-            <div class="container">
-                <h3 class="section-title">Videos</h3>
-                <div class="videos card">
-                    <div class="video-wrap"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" loading="lazy"
-                            title="Video ejemplo"></iframe></div>
-                    <div class="video-wrap"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" loading="lazy"
-                            title="Video ejemplo"></iframe></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacto" class="panel">
-            <div class="container">
-                <h3 class="section-title">Contacto</h3>
-                <div class="card contact">
-                    <form id="contact-form">
-                        <input name="nombre" placeholder="Nombre" required>
-                        <input name="email" type="email" placeholder="Email" required>
-                        <textarea name="mensaje" rows="6" placeholder="Mensaje"></textarea>
-                        <div class="form-actions">
-                            <button type="submit" class="btn primary">Enviar</button>
-                            <div class="socials">
-                                <a href="#" class="icon-btn">f</a>
-                                <a href="#" class="icon-btn">ig</a>
-                                <a href="#" class="icon-btn">yt</a>
+            <!----Carrusel Franco !--->
+            <div class="gallery-category">
+                <h3 class="category-title">FRANCOTIRADORES</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-prev" data-carousel="sniper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel" data-carousel-id="sniper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Francotirador 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Francotirador 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Francotirador 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Francotirador 4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Francotirador 5">
                             </div>
                         </div>
-                    </form>
+                    </div>
+                    <button class="carousel-btn carousel-next" data-carousel="sniper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-dots" data-carousel-dots="sniper"></div>
+            </div>
+
+            <!----Carrusel CQB !--->
+            <div class="gallery-category">
+                <h3 class="category-title">OPERADORES CQB</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-prev" data-carousel="cqb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel" data-carousel-id="cqb">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="CQB 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="CQB 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="CQB 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="CQB 4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="CQB 5">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" data-carousel="cqb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-dots" data-carousel-dots="cqb"></div>
+            </div>
+
+            <!----Carrusel Fusilero  !--->
+            <div class="gallery-category">
+                <h3 class="category-title">APOYO DE FUEGO</h3>
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-prev" data-carousel="support">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="carousel" data-carousel-id="support">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Apoyo 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Apoyo 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Apoyo 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Apoyo 4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="/placeholder.svg?height=400&width=600" alt="Apoyo 5">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" data-carousel="support">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-dots" data-carousel-dots="support"></div>
+            </div>
+        </div>
+    </section>
+
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
+    </div>
+
+    <!----Sección Videos!--->
+    <section class="section section-dark" id="videos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">VIDEOS</h2>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Video 1">
+                        <div class="play-button">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Operación Nocturna 2024</h3>
+                    <p>Misión táctica en condiciones de baja visibilidad</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Video 2">
+                        <div class="play-button">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Torneo CQB - Highlights</h3>
+                    <p>Mejores momentos del campeonato nacional</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Video 3">
+                        <div class="play-button">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Entrenamiento Táctico</h3>
+                    <p>Sesión de preparación y coordinación de equipo</p>
                 </div>
             </div>
-        </section>
-
-    </main>
-
-    <aside id="customizer" class="customizer" aria-hidden="true">
-        <header class="customizer-head"><strong>Personalizador</strong><button id="close-customizer"
-                class="icon-btn">✖</button></header>
-        <div class="customizer-body">
-            <label>Gradiente - Color 1 <input type="color" id="grad1" value="#0f1113"></label>
-            <label>Gradiente - Color 2 <input type="color" id="grad2" value="#2b2b2b"></label>
-            <label>Textura overlay <select id="texture-select">
-                    <option value="none">Ninguna</option>
-                    <option value="noise">Noise</option>
-                    <option value="cam">Camuflaje</option>
-                </select></label>
-            <label>Glow accent <input type="range" id="accentGlow" min="0" max="1" step="0.05" value="0.2"></label>
-            <button id="apply-custom" class="btn">Aplicar</button>
         </div>
-    </aside>
+    </section>
 
-    <div id="toast" class="toast" aria-hidden="true"></div>
+    <!----Transición Stinger !--->
+    <div class="stinger-transition">
+        <div class="stinger-line"></div>
+    </div>
 
-    <script src="main.js"></script>
+    <!----Sección Contacto!--->
+    <section class="section" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">CONTACTO</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿QUIERES UNIRTE?</h3>
+                    <p>Si estás interesado en formar parte de nuestro equipo o participar en nuestros eventos,
+                        contáctanos.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>contacto@equipotactico.mx</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>+52 55 1234 5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Ciudad de México, México</span>
+                        </div>
+                    </div>
+                    <div class="social-links-contact">
+                        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    Footer
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Equipo Táctico Airsoft México. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
