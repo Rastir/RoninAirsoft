@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Equipo Bravo — Landing (v2.0)</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div id="logo-mark" class="mark">
+                <img src="https://i.postimg.cc/GhKtjJ2y/LOGO-TRIANGULO-RONIN-NEGRO-1-1-1.png" alt="Logotipo ronin">
+            </div>
+            <div class="brand-text">Equipo Bravo</div>
+        </div>
+        <nav class="nav" id="main-nav">
+            <a href="#historia">Historia</a>
+            <a href="#valores">Valores</a>
+            <a href="#miembros">Miembros</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#videos">Videos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">🌙</button>
+        </div>
+    </header>
+
+
+    <!-- cinematic stinger container -->
+    <div id="stinger" class="stinger" aria-hidden="true">
+        <div class="stinger-layer" id="stinger-layer"></div>
+        <canvas id="stinger-canvas"></canvas>
+    </div>
+
+
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content container">
+                    <h1 class="kicker">EQUIPO BRAVO</h1>
+                    <h2 class="title">Táctica. Disciplina. Hermandad.</h2>
+                    <p class="lead">Formación mil-sim especializada en operaciones de campo, entrenamiento y eventos
+                        competitivos. Respeto, seguridad y mejora constante.</p>
+                    <div class="hero-ctas">
+                        <a class="btn primary" id="join-btn">Unirse</a>
+                        <a class="btn" href="#eventos">Próximos eventos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="panel">
+            <div class="container">
+                <h3 class="section-title">Historia</h3>
+                <div class="two-col card">
+                    <div>
+                        <h4>Orígenes</h4>
+                        <p>Iniciamos en 2015 como un grupo de amigos con formación en simulación táctica. Evolucionamos
+                            hasta convertirnos en un equipo reconocido en la escena nacional.</p>
+                    </div>
+                    <div>
+                        <h4>Trayectoria</h4>
+                        <p>Participaciones en Milsims regionales, colaboración con organizaciones e impulso de prácticas
+                            seguras y responsables dentro del hobby.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="valores" class="panel">
+            <div class="container">
+                <h3 class="section-title">Valores</h3>
+                <div class="values card">
+                    <div class="value">Disciplina</div>
+                    <div class="value">Seguridad</div>
+                    <div class="value">Camaradería</div>
+                    <div class="value">Respeto</div>
+                    <div class="value">Innovación</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="miembros" class="panel">
+            <div class="container">
+                <h3 class="section-title">Miembros</h3>
+                <div class="team-grid card">
+                    <article class="member">
+                        <img src="assets/members/operador1.jpg" alt="Capitán Hawk">
+                        <div class="meta">
+                            <h4>Capitán "Hawk"</h4><small>Comandante</small>
+                        </div>
+                    </article>
+                    <article class="member">
+                        <img src="assets/members/operador2.jpg" alt="Viper">
+                        <div class="meta">
+                            <h4>"Viper"</h4><small>Francotirador</small>
+                        </div>
+                    </article>
+                    <article class="member">
+                        <img src="assets/members/operador3.jpg" alt="Rook">
+                        <div class="meta">
+                            <h4>"Rook"</h4><small>Soporte</small>
+                        </div>
+                    </article>
+                    <article class="member">
+                        <img src="assets/members/operador4.jpg" alt="Blitz">
+                        <div class="meta">
+                            <h4>"Blitz"</h4><small>CQB</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="panel">
+            <div class="container">
+                <h3 class="section-title">Eventos</h3>
+                <div class="events card">
+                    <div class="event">
+                        <time>12 Oct 2025</time>
+                        <div class="ev-body">
+                            <h4>Milsim Perote</h4>
+                            <p>Escenario montañoso, día completo.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <time>23 Nov 2025</time>
+                        <div class="ev-body">
+                            <h4>Night Raid CDMX</h4>
+                            <p>Operación nocturna — cupo limitado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="panel">
+            <div class="container">
+                <h3 class="section-title">Galería</h3>
+                <div class="gallery-grid">
+                    <div class="carousel card" data-type="sniper">
+                        <h4>Francotirador</h4>
+                        <div class="viewport">
+                            <div class="track" aria-hidden="true"></div>
+                        </div>
+                        <div class="controls">
+                            <button class="icon-btn prev">◀</button>
+                            <div class="dots"></div>
+                            <button class="icon-btn next">▶</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel card" data-type="cqb">
+                        <h4>Operador CQB</h4>
+                        <div class="viewport">
+                            <div class="track" aria-hidden="true"></div>
+                        </div>
+                        <div class="controls">
+                            <button class="icon-btn prev">◀</button>
+                            <div class="dots"></div>
+                            <button class="icon-btn next">▶</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="panel">
+            <div class="container">
+                <h3 class="section-title">Videos</h3>
+                <div class="videos card">
+                    <div class="video-wrap"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" loading="lazy"
+                            title="Video ejemplo"></iframe></div>
+                    <div class="video-wrap"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" loading="lazy"
+                            title="Video ejemplo"></iframe></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="panel">
+            <div class="container">
+                <h3 class="section-title">Contacto</h3>
+                <div class="card contact">
+                    <form id="contact-form">
+                        <input name="nombre" placeholder="Nombre" required>
+                        <input name="email" type="email" placeholder="Email" required>
+                        <textarea name="mensaje" rows="6" placeholder="Mensaje"></textarea>
+                        <div class="form-actions">
+                            <button type="submit" class="btn primary">Enviar</button>
+                            <div class="socials">
+                                <a href="#" class="icon-btn">f</a>
+                                <a href="#" class="icon-btn">ig</a>
+                                <a href="#" class="icon-btn">yt</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <aside id="customizer" class="customizer" aria-hidden="true">
+        <header class="customizer-head"><strong>Personalizador</strong><button id="close-customizer"
+                class="icon-btn">✖</button></header>
+        <div class="customizer-body">
+            <label>Gradiente - Color 1 <input type="color" id="grad1" value="#0f1113"></label>
+            <label>Gradiente - Color 2 <input type="color" id="grad2" value="#2b2b2b"></label>
+            <label>Textura overlay <select id="texture-select">
+                    <option value="none">Ninguna</option>
+                    <option value="noise">Noise</option>
+                    <option value="cam">Camuflaje</option>
+                </select></label>
+            <label>Glow accent <input type="range" id="accentGlow" min="0" max="1" step="0.05" value="0.2"></label>
+            <button id="apply-custom" class="btn">Aplicar</button>
+        </div>
+    </aside>
+
+    <div id="toast" class="toast" aria-hidden="true"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

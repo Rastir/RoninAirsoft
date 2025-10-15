@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo Airsoft México - Fuerza, Estrategia, Hermandad</title>
+
+  <!-- Tipografía táctica -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Script principal -->
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+  <!-- HUD y elementos globales -->
+  <div id="noise-overlay"></div>
+  <div id="scanlines"></div>
+  <div id="glitch-layer"></div>
+  <div id="stinger" class="hidden"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo del Equipo" id="logo">
+      <h1>Equipo Airsoft MX</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#miembros">Miembros</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+      <button id="modeToggle">🌓</button>
+      <button id="openCustomizer">⚙️</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Honor, Estrategia, Hermandad</h2>
+      <p>Domina el campo. Controla tu entorno. Protege a tu escuadra.</p>
+      <button id="exploreBtn" class="cta">Explorar</button>
+    </div>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="content-section">
+    <h2>Historia</h2>
+    <p>Fundado en 2015, nuestro equipo nació de la pasión por la estrategia y la disciplina. Cada operación es una historia de hermandad, precisión y respeto mutuo.</p>
+  </section>
+
+  <!-- VALORES -->
+  <section id="valores" class="content-section">
+    <h2>Valores</h2>
+    <ul class="valores-list">
+      <li>🎯 Disciplina</li>
+      <li>🤝 Lealtad</li>
+      <li>⚔️ Respeto</li>
+      <li>🛡️ Hermandad</li>
+    </ul>
+  </section>
+
+  <!-- MIEMBROS -->
+  <section id="miembros" class="content-section">
+    <h2>Miembros</h2>
+    <div class="grid miembros-grid">
+      <div class="miembro-card">
+        <img src="assets/operador1.jpg" alt="Operador 1">
+        <h3>“Ghost”</h3>
+        <p>Francotirador / Estratega</p>
+      </div>
+      <div class="miembro-card">
+        <img src="assets/operador2.jpg" alt="Operador 2">
+        <h3>“Raptor”</h3>
+        <p>Operador CQB</p>
+      </div>
+      <div class="miembro-card">
+        <img src="assets/operador3.jpg" alt="Operador 3">
+        <h3>“Lobo”</h3>
+        <p>Comandante de escuadra</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS -->
+  <section id="eventos" class="content-section">
+    <h2>Eventos</h2>
+    <div class="timeline">
+      <div class="evento">
+        <h3>Operación Perote</h3>
+        <span>Octubre 2023</span>
+        <p>Simulación táctica en las montañas de Veracruz. Clima extremo, precisión total.</p>
+      </div>
+      <div class="evento">
+        <h3>Operación Fénix</h3>
+        <span>Marzo 2024</span>
+        <p>Reencuentro de escuadras aliadas. Entrenamiento intensivo de CQB.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="content-section">
+    <h2>Galería</h2>
+    <div class="carousel" id="sniperCarousel">
+      <h3>Francotirador</h3>
+      <div class="carousel-container"></div>
+    </div>
+    <div class="carousel" id="cqbCarousel">
+      <h3>Operador CQB</h3>
+      <div class="carousel-container"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="content-section">
+    <h2>Videos</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6_b7RDuLwcI" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="content-section">
+    <h2>Contacto</h2>
+    <p>Únete al equipo o agenda una práctica conjunta.</p>
+    <div class="socials">
+      <a href="#" class="social-btn fb">Facebook</a>
+      <a href="#" class="social-btn ig">Instagram</a>
+      <a href="#" class="social-btn yt">YouTube</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Equipo Airsoft MX - “Honor y Precisión”</p>
+  </footer>
+
+</body>
+</html>

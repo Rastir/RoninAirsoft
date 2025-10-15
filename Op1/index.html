@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronin Airsoft - Equipo de Airsoft Cancun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     Navigation 
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">RONIN</span>
+                <span class="logo-accent">AIRSOFT</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#historia" class="nav-link">Historia</a></li>
+                <li><a href="#valores" class="nav-link">Valores</a></li>
+                <li><a href="#miembros" class="nav-link">Miembros</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+     Hero Section 
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">CANCÚN-MÉXICO</div>
+            <h1 class="hero-title">
+                <span class="title-main">AIRSOFT TEAM</span>
+                <span class="title-accent">CANCUN</span>
+            </h1>
+            <p class="hero-subtitle">Precisión. Estrategia. Hermandad.</p>
+            <p class="hero-subtitle">Siempre ronin</p>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn btn-primary">Únete al Equipo</a>
+                <a href="#historia" class="btn btn-secondary">Conoce Más</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+     Historia Section 
+    <section id="historia" class="section historia-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Nuestra Historia</h2>
+            </div>
+            <div class="historia-content">
+                <div class="historia-text">
+                    <p class="lead-text">Fundado en 2018, Escuadrón Táctico nació de la pasión compartida por el airsoft y el deseo de crear una comunidad unida en México.</p>
+                    <p>Lo que comenzó como un grupo de amigos en campos locales, se ha transformado en uno de los equipos más respetados del país. Nuestra dedicación al entrenamiento, la estrategia y el compañerismo nos ha llevado a competir en torneos nacionales e internacionales.</p>
+                    <p>A través de los años, hemos crecido no solo en número, sino en experiencia y habilidad. Cada miembro aporta su propia perspectiva y fortalezas, creando un equipo verdaderamente formidable.</p>
+                </div>
+                <div class="historia-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Miembros Activos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Eventos Participados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Valores Section -->
+    <section id="valores" class="section valores-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Nuestros Valores</h2>
+            </div>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="valor-title">Trabajo en Equipo</h3>
+                    <p class="valor-description">La coordinación y comunicación son fundamentales. Cada miembro es esencial para el éxito del escuadrón.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="valor-title">Disciplina</h3>
+                    <p class="valor-description">El entrenamiento constante y la dedicación nos mantienen en la cima de nuestro juego.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="valor-title">Respeto</h3>
+                    <p class="valor-description">Respetamos a nuestros compañeros, oponentes y las reglas del juego en todo momento.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="valor-title">Excelencia</h3>
+                    <p class="valor-description">Buscamos constantemente mejorar nuestras habilidades y estrategias en cada partida.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="valor-title">Hermandad</h3>
+                    <p class="valor-description">Más que un equipo, somos una familia unida por la pasión y el compañerismo.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="valor-title">Fair Play</h3>
+                    <p class="valor-description">Jugamos limpio, honramos nuestros hits y mantenemos la integridad del deporte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Miembros Section 
+    <section id="miembros" class="section miembros-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">El Escuadrón</h2>
+            </div>
+            <div class="miembros-grid">
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Comandante">
+                        <div class="miembro-overlay">
+                            <span class="miembro-role">Comandante</span>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3 class="miembro-name">Carlos "Águila" Mendoza</h3>
+                        <p class="miembro-description">Líder del escuadrón con 8 años de experiencia. Especialista en estrategia y coordinación táctica.</p>
+                    </div>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Francotirador">
+                        <div class="miembro-overlay">
+                            <span class="miembro-role">Francotirador</span>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3 class="miembro-name">Miguel "Sombra" Torres</h3>
+                        <p class="miembro-description">Francotirador de élite. Experto en reconocimiento y tiro de precisión a larga distancia.</p>
+                    </div>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Médico">
+                        <div class="miembro-overlay">
+                            <span class="miembro-role">Médico de Campo</span>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3 class="miembro-name">Ana "Cruz" Ramírez</h3>
+                        <p class="miembro-description">Médico certificado y especialista en primeros auxilios. Mantiene al equipo seguro en todo momento.</p>
+                    </div>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Asalto">
+                        <div class="miembro-overlay">
+                            <span class="miembro-role">Asalto</span>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3 class="miembro-name">Luis "Relámpago" García</h3>
+                        <p class="miembro-description">Especialista en asalto rápido y CQB. Líder de escuadra con reflejos excepcionales.</p>
+                    </div>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Apoyo">
+                        <div class="miembro-overlay">
+                            <span class="miembro-role">Apoyo</span>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3 class="miembro-name">Roberto "Trueno" Morales</h3>
+                        <p class="miembro-description">Artillero de apoyo. Proporciona fuego de supresión y control de área en combate.</p>
+                    </div>
+                </div>
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="Ingeniero">
+                        <div class="miembro-overlay">
+                            <span class="miembro-role">Ingeniero</span>
+                        </div>
+                    </div>
+                    <div class="miembro-info">
+                        <h3 class="miembro-name">Diego "Tech" Hernández</h3>
+                        <p class="miembro-description">Especialista técnico. Mantiene y optimiza todo el equipo del escuadrón.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Eventos Section 
+    <section id="eventos" class="section eventos-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Próximos Eventos</h2>
+            </div>
+            <div class="eventos-grid">
+                <div class="evento-card evento-featured">
+                    <div class="evento-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">MAR</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Torneo Nacional</span>
+                        <h3 class="evento-title">Copa Táctica México 2025</h3>
+                        <p class="evento-location">Campo Táctico Monterrey, Nuevo León</p>
+                        <p class="evento-description">El torneo más importante del año. Equipos de todo el país competirán en diversos escenarios tácticos.</p>
+                        <a href="#contacto" class="evento-link">Más información →</a>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date">
+                        <span class="date-day">22</span>
+                        <span class="date-month">MAR</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Entrenamiento</span>
+                        <h3 class="evento-title">Sesión de Entrenamiento CQB</h3>
+                        <p class="evento-location">Campo Urbano CDMX</p>
+                        <p class="evento-description">Entrenamiento intensivo en combate cercano y tácticas urbanas.</p>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">ABR</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Milsim</span>
+                        <h3 class="evento-title">Operación Fénix</h3>
+                        <p class="evento-location">Campo Bosque, Estado de México</p>
+                        <p class="evento-description">Simulación militar de 24 horas con escenarios realistas y objetivos complejos.</p>
+                    </div>
+                </div>
+                <div class="evento-card">
+                    <div class="evento-date">
+                        <span class="date-day">19</span>
+                        <span class="date-month">ABR</span>
+                    </div>
+                    <div class="evento-content">
+                        <span class="evento-tag">Social</span>
+                        <h3 class="evento-title">Reunión del Escuadrón</h3>
+                        <p class="evento-location">Base del Equipo</p>
+                        <p class="evento-description">Reunión mensual para planificación, mantenimiento de equipo y convivencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Galería Section 
+    <section id="galeria" class="section galeria-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Galería</h2>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item galeria-large">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Equipo en formación">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">Formación Táctica</span>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Jugador apuntando">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">En Acción</span>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Planificación estratégica">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">Estrategia</span>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Combate CQB">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">CQB</span>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Batalla en campo">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">Campo Abierto</span>
+                    </div>
+                </div>
+                <div class="galeria-item galeria-wide">
+                    <img src="/placeholder.svg?height=400&width=800" alt="Celebración del equipo">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">Victoria</span>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Francotirador en posición">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">Precisión</span>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="Operación nocturna">
+                    <div class="galeria-overlay">
+                        <span class="galeria-caption">Ops Nocturnas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Contacto Section 
+    <section id="contacto" class="section contacto-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Contacto</h2>
+            </div>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3 class="contacto-subtitle">¿Listo para unirte?</h3>
+                    <p class="contacto-text">Si estás interesado en formar parte de nuestro escuadrón o simplemente quieres más información sobre nuestras actividades, no dudes en contactarnos.</p>
+                    
+                    <div class="contacto-details">
+                        <div class="contacto-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <span class="contacto-label">Email</span>
+                                <a href="mailto:contacto@escuadrontactico.mx">contacto@escuadrontactico.mx</a>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <span class="contacto-label">Ubicación</span>
+                                <span>Ciudad de México, México</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4 class="social-title">Síguenos</h4>
+                        <div class="social-buttons">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter/X">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contacto-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">ESCUADRÓN</span>
+                        <span class="logo-accent">TÁCTICO</span>
+                    </div>
+                    <p class="footer-tagline">Precisión. Estrategia. Hermandad.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#historia">Historia</a></li>
+                            <li><a href="#valores">Valores</a></li>
+                            <li><a href="#miembros">Miembros</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Actividades</h4>
+                        <ul>
+                            <li><a href="#eventos">Eventos</a></li>
+                            <li><a href="#galeria">Galería</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Escuadrón Táctico. Todos los derechos reservados.</p>
+                <p class="footer-credit">Diseñado con pasión por el airsoft</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
