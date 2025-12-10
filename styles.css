@@ -697,11 +697,6 @@ body {
   border-radius: 0; 
 }
 
-/* mantener el efecto hover en el iframe */
-.video-card:hover .video-thumbnail iframe {
-  
-}
-
 .video-card h3 {
   padding: 1.5rem 1.5rem 0.5rem;
   font-size: 1.25rem;
@@ -712,30 +707,44 @@ body {
   padding: 0 1.5rem 1.5rem;
   color: var(--text-secondary);
 }
+
 /* Contacto Section */
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.contact-info {
+  max-width: 600px;
+  text-align: center;
+  padding: 3rem 2rem;
 }
 
 .contact-info h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, var(--accent-red) 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .contact-info > p {
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   line-height: 1.8;
+  font-size: 1.1rem;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
 }
 
 .contact-item {
@@ -743,6 +752,20 @@ body {
   align-items: center;
   gap: 1rem;
   color: var(--text-primary);
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  min-width: 300px;
+  justify-content: center;
+}
+
+.contact-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-red);
+  transform: translateX(10px);
 }
 
 .contact-item svg {
@@ -750,53 +773,114 @@ body {
   flex-shrink: 0;
 }
 
-.social-links-contact {
-  display: flex;
-  gap: 1rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--bg-secondary);
-  border: 2px solid var(--border-color);
-  border-radius: 8px;
+.contact-item a {
   color: var(--text-primary);
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent-red);
+.contact-item a:hover {
+  color: var(--accent-red);
 }
 
-.submit-btn {
-  padding: 1rem 2rem;
-  background-color: var(--accent-red);
-  color: var(--text-light);
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-decoration: none;
   font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
   transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.submit-btn:hover {
-  background-color: var(--accent-red-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px var(--shadow);
+.whatsapp-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+  background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+}
+
+.whatsapp-btn svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+}
+
+/* Animación para el ícono de WhatsApp */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 2rem 1rem;
+  }
+
+  .contact-info h3 {
+    font-size: 2rem;
+  }
+
+  .contact-info > p {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    min-width: auto;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    padding: 18px 30px;
+    font-size: 1rem;
+  }
+
+  .whatsapp-btn span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .contact-details {
+    gap: 1rem;
+  }
+
+  .whatsapp-btn {
+    padding: 16px 24px;
+  }
+
+  .whatsapp-btn span {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
 }
 
 /* Footer */
